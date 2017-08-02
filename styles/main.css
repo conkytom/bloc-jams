@@ -21,7 +21,7 @@ body.landing {
 
 .navbar {
     position: relative;
-    padding: 0.5rem;
+    padding: 0.6rem;
     /* #1 */
     background-color: rgb(101,18,95,0.5);
     /* #2 */
@@ -61,6 +61,10 @@ body.landing {
 
     /* #5 */
 .links-container .navbar-link:hover {
+    color: rgb(233,50,117);
+}
+.links-container .navbar-link:active {
+    background-color: white;
     color: rgb(233,50,117);
 }
 .container {
