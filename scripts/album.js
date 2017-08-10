@@ -22,10 +22,32 @@ var albumMarconi = {
     albumArtUrl: 'assets/images/album_covers/20.png',
     songs: [
         { title: 'Hello, Operator?', duration: '1:01' },
-        { title: 'Rin, ring, ring', duration: '5:01' },
+        { title: 'Ring, ring, ring', duration: '5:01' },
         { title: 'Fits in your pocket', duration: '3:22' },
         { title: 'Can you hear me now?', duration: '3:14' },
         { title: 'Wrong phone number', duration: '2:15' },
+    ]
+};
+
+var albumRage = {
+    title: 'Evil Empire',
+    artist: 'Rage Against the Machine',
+    label: 'Epic',
+    year: '1996',
+    albumArtUrl: 'assets/images/album_covers/rage.png',
+    songs: [
+        { title: 'People of the Sun', duration: '2:30' },
+        { title: 'Bulls on Parade', duration: '3:49' },
+        { title: 'Vietnow', duration: '4:39' },
+        { title: 'Revolver', duration: '5:30' },
+        { title: 'Snakecharmer', duration: '3:56' },
+        { title: 'Tire Me', duration: '3:00' },
+        { title: 'Down Rodeo', duration: '5:20' },
+        { title: 'Without a Face', duration: '3:36' },
+        { title: 'Wind Below', duration: '5:50' },
+        { title: 'Roll Right', duration: '4:22' },
+        { title: 'Year of the Bommerang', duration: '4:02' },
+
     ]
 };
 
@@ -51,7 +73,7 @@ var setCurrentAlbum = function(album) {
     //#2
     albumTitle.firstChild.nodeValue = album.title;
     albumArtist.firstChild.nodeValue = album.artist;
-    albumReleaseInfo.firstChild.nodeValue = album.year;
+    albumReleaseInfo.firstChild.nodeValue = album.year + ' ' + album.label;
     albumImage.setAttribute('src', album.albumArtUrl);
     //#3
     albumSongList.innerHTML = '';
@@ -59,7 +81,15 @@ var setCurrentAlbum = function(album) {
         albumSongList.innerHTML += creatSongRow(i + 1, album.songs[i].title, album.songs[i].duration)
     }
 };
+var albumArray = [albumPicasso, albumMarconi, albumRage];
 
 window.onload = function() {
-    setCurrentAlbum(albumPicasso);
+    var i = 0
+    setCurrentAlbum(albumArray[i]);
+    document.getElementsByClassName('album-cover-art')[0].addEventListener("click", function () {
+        i++;
+        if (i >= albumArray.length)
+            i = 0;
+        setCurrentAlbum(albumArray[i]);
+    });
 };
