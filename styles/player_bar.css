@@ -47,7 +47,7 @@
 
 .player-bar .currently-playing {
     width: 50%;
-    text-align: center;
+//    text-align: center;
     position: relative;
 }
 
@@ -82,8 +82,8 @@
 
 .seek-contol .current-time {
     position: absolute;
-    left: 0;
-    top: 0.5rem;
+//    left: 0;
+    top: 0.6rem;
 }
 
 .seek-control .total-time {
@@ -160,7 +160,7 @@
         margin: 0 auto;
         padding: 0;
         width: 100%;
-        text-align: center;
+//        text-align: center;
     }
 
     .player-bar .main-controls,
