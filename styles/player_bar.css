@@ -47,7 +47,11 @@
 
 .player-bar .currently-playing {
     width: 50%;
+<<<<<<< HEAD
 //    text-align: center;
+=======
+    text-align: center;
+>>>>>>> chapter-15-music-player
     position: relative;
 }
 
@@ -80,9 +84,14 @@
     font-size: 0.8rem;
 }
 
+<<<<<<< HEAD
 .seek-contol .current-time {
     position: absolute;
 //    left: 0;
+=======
+.seek-control .current-time {
+    position: absolute;
+>>>>>>> chapter-15-music-player
     top: 0.6rem;
 }
 
@@ -160,7 +169,11 @@
         margin: 0 auto;
         padding: 0;
         width: 100%;
+<<<<<<< HEAD
 //        text-align: center;
+=======
+        text-align: center;
+>>>>>>> chapter-15-music-player
     }
 
     .player-bar .main-controls,
