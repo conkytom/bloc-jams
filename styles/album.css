@@ -4,11 +4,7 @@ body.album {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-<<<<<<< HEAD
     padding-bottom: 200px;
-=======
-    padding-bottom: 220px; 
->>>>>>> chapter-17-jquery-collection
 }
 
 .album-cover-art {
