@@ -47,15 +47,7 @@
 
 .player-bar .currently-playing {
     width: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-//    text-align: center;
-=======
     text-align: center;
->>>>>>> chapter-15-music-player
-=======
-    text-align: center;
->>>>>>> chapter-17-jquery-collection
     position: relative;
 }
 
@@ -88,19 +80,8 @@
     font-size: 0.8rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.seek-contol .current-time {
-    position: absolute;
-//    left: 0;
-=======
 .seek-control .current-time {
     position: absolute;
->>>>>>> chapter-15-music-player
-=======
-.seek-control .current-time {
-    position: absolute;
->>>>>>> chapter-17-jquery-collection
     top: 0.6rem;
 }
 
@@ -178,15 +159,7 @@
         margin: 0 auto;
         padding: 0;
         width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-//        text-align: center;
-=======
         text-align: center;
->>>>>>> chapter-15-music-player
-=======
-        text-align: center;
->>>>>>> chapter-17-jquery-collection
     }
 
     .player-bar .main-controls,
