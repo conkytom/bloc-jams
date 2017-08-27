@@ -244,7 +244,6 @@ var updatePlayerBarSong = function (){
     setTotalTimeInPlayerBar(currentSongFromAlbum.duration);
     $('.main-controls .play-pause').html(playerBarPauseButton);
 
-<<<<<<< HEAD
 };
 
 var togglePlayFromPlayerBar = function(){
@@ -258,8 +257,6 @@ var togglePlayFromPlayerBar = function(){
         currentSoundFile.pause();
         currentlyPlayingCell.html(playButtonTemplate);
     }
-=======
->>>>>>> assignment-21
 };
 
 
